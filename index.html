@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Special Birthday ❤️</title>
+
+  <link rel="stylesheet" href="riyabday.css">
+</head>
+<body>
+
+  <!-- FIRST PAGE: BIRTHDAY DASHBOARD -->
+  <section id="homePage" class="page active">
+    <div class="floating-hearts" id="hearts"></div>
+
+    <div class="dashboard">
+      <div class="top-label">A Special Day ♡</div>
+
+      <div class="heart-icon">♥</div>
+
+      <p class="small-heading">A little surprise for you</p>
+
+      <h1>Happy<br>Birthday</h1>
+
+      <p class="intro">
+        May your day be filled with love, happiness
+        and all the beautiful things you deserve. ♡
+      </p>
+
+      <button id="startBtn" class="start-btn">
+        <span>♥</span> Click Here
+      </button>
+
+      <p class="bottom-note">Made with love, just for you ✨</p>
+    </div>
+  </section>
+
+
+  <!-- SECOND PAGE: FIREWORKS + CAKE + MUSIC -->
+  <section id="birthdayPage" class="page">
+
+    <canvas id="fireworks"></canvas>
+    <div class="ambient-glow"></div>
+    <div class="background-hearts" id="backgroundHearts"></div>
+
+    <div class="music-pill">
+      <span class="music-symbol" id="musicSymbol">♫</span>
+      <span id="musicStatus">A song for you</span>
+      <span class="music-time" id="musicTime">00:00</span>
+    </div>
+
+    <div class="birthday-content">
+      <p class="surprise-label">TODAY IS ALL ABOUT YOU</p>
+
+      <h2>Happy Birthday <span>♡</span></h2>
+
+      <div class="cake-container">
+        <!-- Apni cake PNG ka filename yahan likhna -->
+        <img
+          id="birthdayCake"
+          src="cake.png"
+          alt="Birthday Cake"
+        >
+      </div>
+
+      <div class="subtitle-box">
+        <span class="subtitle-note">♫</span>
+        <p id="subtitle">A little birthday magic is waiting for you...</p>
+        <span class="subtitle-note">♫</span>
+      </div>
+
+      <p class="love-message">You deserve all the happiness in the world ♥</p>
+    </div>
+
+    <!-- Apni MP3 file ka filename yahan likhna -->
+    <audio id="birthdaySong" preload="auto">
+      <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+  </section>
+
+  <script src="riyabday.js"></script>
+</body>
+</html>
